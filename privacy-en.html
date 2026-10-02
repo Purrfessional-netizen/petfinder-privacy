@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PetFinder – Privacy Policy</title>
+<style>
+  :root { --green:#2F6F4F; --text:#1F2328; --muted:#6B7280; --bg:#F6F4EF; --card:#FFFFFF; --border:#E5E1D8; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 -apple-system, "Segoe UI", Roboto, "Noto Sans", Arial, sans-serif; }
+  main { max-width:820px; margin:0 auto; padding:32px 16px 64px; }
+  header { text-align:center; margin-bottom:28px; }
+  header .logo { font-size:44px; }
+  h1 { color:var(--green); margin:6px 0 4px; font-size:28px; }
+  .meta { color:var(--muted); font-size:14px; }
+  section { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px 20px; margin:14px 0; }
+  h2 { font-size:19px; margin:0 0 8px; color:var(--green); }
+  h3 { font-size:16px; margin:14px 0 4px; }
+  ul { padding-left:22px; margin:6px 0; }
+  li { margin:4px 0; }
+  table { width:100%; border-collapse:collapse; font-size:14px; margin-top:8px; }
+  th, td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid var(--border); }
+  th { background:#F1EEE6; }
+  .note { color:var(--muted); font-size:14px; }
+  a { color:var(--green); }
+  @media (max-width:560px) { table, thead, tbody, tr, th, td { display:block; } thead { display:none; } td { border:none; padding:4px 0; } tr { border-bottom:1px solid var(--border); padding:8px 0; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo"><img src="logo.png" alt="PetFinder" width="72" height="72"></div>
+    <h1>PetFinder Privacy Policy</h1>
+    <div class="meta">Last updated: 2 October 2026</div>
+    <div class="meta" style="margin-top:6px">🇬🇷 <a href="./">Διάβασε στα ελληνικά</a></div>
+  </header>
+
+  <section>
+    <h2>1. Who we are</h2>
+    <p><strong>PetFinder</strong> is a free mobile app that helps owners find their lost pets through lost pet reports and stray animal sightings.</p>
+    <p>The controller of your data is <strong>Spyridon Kafkas</strong>, Greece.
+      For any question about your data, contact <a href="mailto:petfinder.app.gr@gmail.com">petfinder.app.gr@gmail.com</a>.</p>
+  </section>
+
+  <section>
+    <h2>2. What data we collect and why</h2>
+    <table>
+      <thead><tr><th>Data</th><th>Why we need it</th><th>Who can see it</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Email and password</strong></td><td>To create and log in to your account. Your password is stored encrypted.</td><td>Only you. It is never shown to other users.</td></tr>
+        <tr><td><strong>Username</strong></td><td>Shown on your reports ("Posted by").</td><td>All logged-in users.</td></tr>
+        <tr><td><strong>Reports</strong>: animal photos, species, name, colour, description, date/time</td><td>The core purpose of the app: to locate animals and match lost reports with found reports.</td><td>All logged-in users.</td></tr>
+        <tr><td><strong>Report location</strong> (point on the map and address)</td><td>So that reports are shown to people nearby and to calculate possible matches.</td><td>All logged-in users.</td></tr>
+        <tr><td><strong>Your device's current location</strong></td><td>Only while you use the app: to show animals within a radius around you and, if you choose, to fill in the location of a report. <em>We do not track your location in the background and do not store it, unless you use it in a report.</em></td><td>No one (unless it becomes part of a report).</td></tr>
+        <tr><td><strong>Contact details</strong>: full name and phone number</td><td>So that someone who may have found your pet can contact you (or vice versa).</td><td><strong>Not public.</strong> Shown only to users who have their own report that matches yours (same species, nearby).</td></tr>
+        <tr><td><strong>Notification identifier (push token)</strong> and app language</td><td>To send you notifications about possible matches and reunions, in the language you have chosen.</td><td>No other user.</td></tr>
+        <tr><td><strong>Reports of inappropriate content</strong> and user blocks</td><td>For the safety of the community and to remove fake or inappropriate content.</td><td>Only the app administrator.</td></tr>
+      </tbody>
+    </table>
+    <p class="note">We do not collect data for advertising, we do not build advertising profiles and we <strong>never sell</strong> your data.</p>
+  </section>
+
+  <section>
+    <h2>3. Legal basis</h2>
+    <ul>
+      <li><strong>Performance of the service</strong> you request (account, reports, matches, notifications) – Article 6(1)(b) GDPR.</li>
+      <li><strong>Your consent</strong> for access to location, camera, photos and notifications, which you give (and withdraw) in your phone's settings – Article 6(1)(a) GDPR.</li>
+      <li><strong>Legitimate interest</strong> in keeping the app secure and handling abuse – Article 6(1)(f) GDPR.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. Photo comparison with artificial intelligence</h2>
+    <p>When a report is posted, its photos are automatically compared with photos from nearby reports to estimate whether they show the same animal. For this comparison we use the AI service <strong>Claude by Anthropic</strong>. Only the photos and the animal's details (species, colour, description) are sent to the service, <strong>not</strong> your contact details or email. The result is an estimate of similarity; the final confirmation is always made by the owner.</p>
+  </section>
+
+  <section>
+    <h2>5. Who we work with (processors)</h2>
+    <p>To run the app we use trusted providers that process data only on our behalf:</p>
+    <ul>
+      <li><strong>Supabase</strong> – database, accounts and photo storage (servers in the European Union, Frankfurt).</li>
+      <li><strong>Anthropic</strong> – AI photo comparison (USA).</li>
+      <li><strong>Expo</strong> and <strong>Google Firebase Cloud Messaging</strong> – sending push notifications.</li>
+      <li><strong>MapTiler</strong> (with OpenStreetMap data) – displaying maps (receives your device's IP address when a map loads).</li>
+      <li><strong>Operating system location services</strong> (Google / Apple) – converting coordinates to addresses and address search.</li>
+    </ul>
+    <p>Where data is transferred outside the European Economic Area (e.g. the USA), this is done with the appropriate GDPR safeguards, such as the European Commission's Standard Contractual Clauses or the EU–US Data Privacy Framework.</p>
+  </section>
+
+  <section>
+    <h2>6. How long we keep data</h2>
+    <ul>
+      <li><strong>Reports:</strong> until you delete them or until the animal's reunion with its owner is confirmed (both reports are then deleted automatically).</li>
+      <li><strong>Reunions:</strong> we keep only the animal's name and species and the dates it was lost and found, without photos or contact details.</li>
+      <li><strong>Account:</strong> until you ask for it to be deleted. Deleting your account also deletes all your reports, photos and contact details.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. Your rights</h2>
+    <p>Under the General Data Protection Regulation (GDPR), you have the right to:</p>
+    <ul>
+      <li>access your data and receive a copy of it,</li>
+      <li>rectification (e.g. change your username in "My profile"),</li>
+      <li>erasure (delete reports in the app or delete your whole account),</li>
+      <li>restrict and object to processing,</li>
+      <li>data portability,</li>
+      <li>withdraw your consent at any time (e.g. turn off location or notifications in your phone's settings).</li>
+    </ul>
+    <p>To exercise any of these rights, write to us at <a href="mailto:petfinder.app.gr@gmail.com">petfinder.app.gr@gmail.com</a>. We will reply within one month at the latest.</p>
+    <p>If you believe the processing breaks the law, you can lodge a complaint with the Hellenic Data Protection Authority (<a href="https://www.dpa.gr" rel="noopener">www.dpa.gr</a>) or the data protection authority of your country.</p>
+  </section>
+
+  <section>
+    <h2>8. Deleting your account</h2>
+    <p>You can delete your account and all your data:</p>
+    <ul>
+      <li>in the app: <em>My profile → Delete account</em>, or</li>
+      <li>by emailing <a href="mailto:petfinder.app.gr@gmail.com">petfinder.app.gr@gmail.com</a> from the address you signed up with, with the subject "Delete account".</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>9. Security</h2>
+    <p>All communication in the app is encrypted (HTTPS). Access to data is controlled by security rules in the database, so that each user can only change or delete their own data, and contact details are accessible only as described above.</p>
+  </section>
+
+  <section>
+    <h2>10. Children</h2>
+    <p>The app is intended for users over 15. If you are under 15, use it only with the consent and help of a parent or guardian.</p>
+  </section>
+
+  <section>
+    <h2>11. Changes to this policy</h2>
+    <p>If the way we use your data changes, we will update this page and, for significant changes, notify you in the app.</p>
+  </section>
+
+  <p class="meta" style="text-align:center">© 2026 PetFinder · <a href="mailto:petfinder.app.gr@gmail.com">petfinder.app.gr@gmail.com</a></p>
+</main>
+</body>
+</html>

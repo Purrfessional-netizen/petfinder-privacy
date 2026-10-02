@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PetFinder · Επιβεβαίωση email</title>
+<title>PetFinder · Επιβεβαίωση email / Email confirmation</title>
 <style>
   body { margin: 0; font-family: -apple-system, Segoe UI, Roboto, sans-serif; background: #F6F4EF; color: #1F2A24;
          min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; box-sizing: border-box; }
@@ -14,6 +14,9 @@
   p { line-height: 1.6; color: #4A5650; }
   .err h1 { color: #B5432F; }
   a { color: #2F6F4F; }
+  h2 { color: #2F6F4F; font-size: 20px; margin: 8px 0 12px; }
+  .err h2 { color: #B5432F; }
+  .sep { border: none; border-top: 1px solid #E5E1D8; margin: 22px 0 14px; }
 </style>
 </head>
 <body>
@@ -22,13 +25,21 @@
     <h1>Το email σου επιβεβαιώθηκε!</h1>
     <p>Γύρνα στην εφαρμογή <strong>PetFinder</strong> και συνδέσου με το email και τον κωδικό σου.</p>
     <p>Μπορείς να κλείσεις αυτή τη σελίδα.</p>
+    <hr class="sep">
+    <h2>Your email is confirmed!</h2>
+    <p>Go back to the <strong>PetFinder</strong> app and log in with your email and password.</p>
+    <p>You can close this page.</p>
   </div>
   <div class="card err" id="err" style="display:none">
     <div class="paw">⚠️</div>
     <h1>Ο σύνδεσμος δεν ισχύει</h1>
     <p>Ίσως έληξε ή έχει ήδη χρησιμοποιηθεί. Δοκίμασε να συνδεθείς στην εφαρμογή· αν δεν γίνεται,
        κάνε ξανά εγγραφή για να λάβεις νέο email.</p>
-    <p>Βοήθεια: <a href="mailto:petfinder.app.gr@gmail.com">petfinder.app.gr@gmail.com</a></p>
+    <hr class="sep">
+    <h2>This link is not valid</h2>
+    <p>It may have expired or already been used. Try logging in to the app; if that doesn't work,
+       sign up again to receive a new email.</p>
+    <p>Βοήθεια / Help: <a href="mailto:petfinder.app.gr@gmail.com">petfinder.app.gr@gmail.com</a></p>
   </div>
 <script>
   // Το Supabase προσθέτει "error=..." στη διεύθυνση όταν ο σύνδεσμος δεν ισχύει.
