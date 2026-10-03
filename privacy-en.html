@@ -31,7 +31,7 @@
   <header>
     <div class="logo"><img src="logo.png" alt="PetFinder" width="72" height="72"></div>
     <h1>PetFinder Privacy Policy</h1>
-    <div class="meta">Last updated: 2 October 2026</div>
+    <div class="meta">Last updated: 4 October 2026</div>
     <div class="meta" style="margin-top:6px">🇬🇷 <a href="./">Διάβασε στα ελληνικά</a></div>
   </header>
 
@@ -70,8 +70,9 @@
   </section>
 
   <section>
-    <h2>4. Photo comparison with artificial intelligence</h2>
+    <h2>4. Photo checks and comparison with artificial intelligence</h2>
     <p>When a report is posted, its photos are automatically compared with photos from nearby reports to estimate whether they show the same animal. For this comparison we use the AI service <strong>Claude by Anthropic</strong>. Only the photos and the animal's details (species, colour, description) are sent to the service, <strong>not</strong> your contact details or email. The result is an estimate of similarity; the final confirmation is always made by the owner.</p>
+    <p><strong>Content checks:</strong> before a report is published, its photos are checked automatically by the same service, so that inappropriate content (e.g. nudity or violence) or photos that don't show an animal are not shown. If a report doesn't pass the check, it is not published, you are notified and you can change the photos. In that case, the app's administrator reviews the report and may publish it if the automatic check made a mistake.</p>
   </section>
 
   <section>
@@ -79,9 +80,10 @@
     <p>To run the app we use trusted providers that process data only on our behalf:</p>
     <ul>
       <li><strong>Supabase</strong> – database, accounts and photo storage (servers in the European Union, Frankfurt).</li>
-      <li><strong>Anthropic</strong> – AI photo comparison (USA).</li>
+      <li><strong>Anthropic</strong> – AI photo checks and comparison (USA).</li>
+      <li><strong>Resend</strong> – sending emails to the administrator when a report needs review (contains only the animal's details, not yours) (USA).</li>
       <li><strong>Expo</strong> and <strong>Google Firebase Cloud Messaging</strong> – sending push notifications.</li>
-      <li><strong>MapTiler</strong> (with OpenStreetMap data) – displaying maps (receives your device's IP address when a map loads).</li>
+      <li><strong>MapTiler</strong> (with OpenStreetMap data) – displaying maps and converting a report's location into an address (receives your device's IP address and the location's coordinates).</li>
       <li><strong>Operating system location services</strong> (Google / Apple) – converting coordinates to addresses and address search.</li>
     </ul>
     <p>Where data is transferred outside the European Economic Area (e.g. the USA), this is done with the appropriate GDPR safeguards, such as the European Commission's Standard Contractual Clauses or the EU–US Data Privacy Framework.</p>
